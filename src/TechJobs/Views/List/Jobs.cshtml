@@ -8,18 +8,17 @@
     @foreach (Dictionary<string, string> item in ViewBag.jobs)
     {
         <table class="job-listing ">
-    
-        @foreach (KeyValuePair<string, string> itemline in item)
-        {
 
-        <tr>
-            <td> @itemline.Key</td>
-            <td> @itemline.Value</td>
-        </tr>
+            @foreach (KeyValuePair<string, string> itemline in item)
+            {
+
+                <tr>
+                    <td> @itemline.Key</td>
+                    <td> @itemline.Value</td>
+                </tr>
 
 
-        }
+            }
         </table>
-
-     }
+    }
 }
